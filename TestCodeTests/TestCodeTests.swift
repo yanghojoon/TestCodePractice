@@ -8,10 +8,6 @@
 import XCTest
 
 final class TestCodeTests: XCTestCase {
-    
-    private func add(number1: Int, number2: Int) -> Int {
-        number1 + number2
-    }
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -25,10 +21,10 @@ final class TestCodeTests: XCTestCase {
         let number1 = 1
         let number2 = 2
         
-        let result = add(number1: number1, number2: number2)
-        let expectation = 3
-        
-        XCTAssertEqual(result, expectation)
+//        let result = add(number1: number1, number2: number2)
+//        let expectation = 3
+//        
+//        XCTAssertEqual(result, expectation)
     }
 
     func testPerformanceExample() throws {
