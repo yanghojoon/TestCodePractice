@@ -5,6 +5,8 @@
 //  Created by 양호준 on 2024/02/26.
 //
 
+@testable import TestCode
+
 import XCTest
 
 final class TestCodeTests: XCTestCase {
@@ -21,10 +23,12 @@ final class TestCodeTests: XCTestCase {
         let number1 = 1
         let number2 = 2
         
-//        let result = add(number1: number1, number2: number2)
-//        let expectation = 3
-//        
-//        XCTAssertEqual(result, expectation)
+        let calculator = Calculator()
+        
+        let result = calculator.add(number1: number1, number2: number2)
+        let expectation = 3
+        
+        XCTAssertEqual(result, expectation)
     }
 
     func testPerformanceExample() throws {
@@ -33,5 +37,4 @@ final class TestCodeTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-
 }
