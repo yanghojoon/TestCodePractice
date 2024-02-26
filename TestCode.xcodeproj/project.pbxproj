@@ -14,6 +14,7 @@
 		DEAFAD632B8CC49C009C9C8E /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAFAD622B8CC49C009C9C8E /* CalculatorTests.swift */; };
 		DEAFAD6A2B8CCB8A009C9C8E /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAFAD692B8CCB8A009C9C8E /* Calculator.swift */; };
 		DEAFAD6C2B8CCFE7009C9C8E /* StringConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAFAD6B2B8CCFE7009C9C8E /* StringConverter.swift */; };
+		DEAFAD6E2B8CD126009C9C8E /* StringConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAFAD6D2B8CD126009C9C8E /* StringConverterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		DEAFAD622B8CC49C009C9C8E /* CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTests.swift; sourceTree = "<group>"; };
 		DEAFAD692B8CCB8A009C9C8E /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 		DEAFAD6B2B8CCFE7009C9C8E /* StringConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConverter.swift; sourceTree = "<group>"; };
+		DEAFAD6D2B8CD126009C9C8E /* StringConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConverterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				DEAFAD622B8CC49C009C9C8E /* CalculatorTests.swift */,
+				DEAFAD6D2B8CD126009C9C8E /* StringConverterTests.swift */,
 			);
 			path = TestCodeTests;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEAFAD632B8CC49C009C9C8E /* CalculatorTests.swift in Sources */,
+				DEAFAD6E2B8CD126009C9C8E /* StringConverterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
