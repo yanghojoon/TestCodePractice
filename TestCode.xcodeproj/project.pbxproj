@@ -17,6 +17,10 @@
 		DEAFAD6E2B8CD126009C9C8E /* StringConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAFAD6D2B8CD126009C9C8E /* StringConverterTests.swift */; };
 		DEAFAD702B8CD702009C9C8E /* NetworkMangerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAFAD6F2B8CD702009C9C8E /* NetworkMangerTests.swift */; };
 		DEAFAD722B8CD7AE009C9C8E /* RandomNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAFAD712B8CD7AE009C9C8E /* RandomNumber.swift */; };
+		DEAFAD742B8CDC0E009C9C8E /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAFAD732B8CDC0E009C9C8E /* URLSessionProtocol.swift */; };
+		DEAFAD772B8CDC52009C9C8E /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAFAD762B8CDC52009C9C8E /* MockURLProtocol.swift */; };
+		DEAFAD792B8CDD14009C9C8E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAFAD782B8CDD14009C9C8E /* NetworkManager.swift */; };
+		DEAFAD7B2B8CDE33009C9C8E /* StubRandomNumber.json in Resources */ = {isa = PBXBuildFile; fileRef = DEAFAD7A2B8CDE33009C9C8E /* StubRandomNumber.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +46,10 @@
 		DEAFAD6D2B8CD126009C9C8E /* StringConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConverterTests.swift; sourceTree = "<group>"; };
 		DEAFAD6F2B8CD702009C9C8E /* NetworkMangerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMangerTests.swift; sourceTree = "<group>"; };
 		DEAFAD712B8CD7AE009C9C8E /* RandomNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomNumber.swift; sourceTree = "<group>"; };
+		DEAFAD732B8CDC0E009C9C8E /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
+		DEAFAD762B8CDC52009C9C8E /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
+		DEAFAD782B8CDD14009C9C8E /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		DEAFAD7A2B8CDE33009C9C8E /* StubRandomNumber.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = StubRandomNumber.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +96,8 @@
 				DEAFAD692B8CCB8A009C9C8E /* Calculator.swift */,
 				DEAFAD6B2B8CCFE7009C9C8E /* StringConverter.swift */,
 				DEAFAD712B8CD7AE009C9C8E /* RandomNumber.swift */,
+				DEAFAD732B8CDC0E009C9C8E /* URLSessionProtocol.swift */,
+				DEAFAD782B8CDD14009C9C8E /* NetworkManager.swift */,
 				DEAFAD522B8CC3C7009C9C8E /* Assets.xcassets */,
 				DEAFAD542B8CC3C7009C9C8E /* Preview Content */,
 			);
@@ -105,11 +115,21 @@
 		DEAFAD612B8CC49C009C9C8E /* TestCodeTests */ = {
 			isa = PBXGroup;
 			children = (
+				DEAFAD752B8CDC40009C9C8E /* TestDouble */,
 				DEAFAD622B8CC49C009C9C8E /* CalculatorTests.swift */,
 				DEAFAD6D2B8CD126009C9C8E /* StringConverterTests.swift */,
 				DEAFAD6F2B8CD702009C9C8E /* NetworkMangerTests.swift */,
 			);
 			path = TestCodeTests;
+			sourceTree = "<group>";
+		};
+		DEAFAD752B8CDC40009C9C8E /* TestDouble */ = {
+			isa = PBXGroup;
+			children = (
+				DEAFAD762B8CDC52009C9C8E /* MockURLProtocol.swift */,
+				DEAFAD7A2B8CDE33009C9C8E /* StubRandomNumber.json */,
+			);
+			path = TestDouble;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +222,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEAFAD7B2B8CDE33009C9C8E /* StubRandomNumber.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +233,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEAFAD742B8CDC0E009C9C8E /* URLSessionProtocol.swift in Sources */,
 				DEAFAD4F2B8CC3C5009C9C8E /* ContentView.swift in Sources */,
 				DEAFAD4D2B8CC3C5009C9C8E /* TestCodeApp.swift in Sources */,
+				DEAFAD792B8CDD14009C9C8E /* NetworkManager.swift in Sources */,
 				DEAFAD722B8CD7AE009C9C8E /* RandomNumber.swift in Sources */,
 				DEAFAD6A2B8CCB8A009C9C8E /* Calculator.swift in Sources */,
 				DEAFAD6C2B8CCFE7009C9C8E /* StringConverter.swift in Sources */,
@@ -227,6 +250,7 @@
 				DEAFAD702B8CD702009C9C8E /* NetworkMangerTests.swift in Sources */,
 				DEAFAD632B8CC49C009C9C8E /* CalculatorTests.swift in Sources */,
 				DEAFAD6E2B8CD126009C9C8E /* StringConverterTests.swift in Sources */,
+				DEAFAD772B8CDC52009C9C8E /* MockURLProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
