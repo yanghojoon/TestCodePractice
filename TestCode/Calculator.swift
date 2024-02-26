@@ -8,8 +8,10 @@
 import Foundation
 
 final class Calculator {
-    func add(number1: Int, number2: Int) -> Int {
-        number1 + number2
+    var result: Int = .zero
+    
+    func add(number1: Int, number2: Int) {
+        result = number1 + number2
     }
     
     private func printResult() {
