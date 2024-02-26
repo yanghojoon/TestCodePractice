@@ -26,7 +26,7 @@ final class NetworkMangerTests: XCTestCase {
         }
         
         // When
-        URLSession.shared.dataTask(with: URLRequest(url: url)) { data, response, error in
+        let dataTask = URLSession.shared.dataTask(with: URLRequest(url: url)) { data, response, error in
             if let data = data {
                 do {
                     let randomNumber = try JSONDecoder().decode(RandomNumber.self, from: data)
@@ -40,5 +40,39 @@ final class NetworkMangerTests: XCTestCase {
                 XCTFail()
             }
         }
+        
+        dataTask.resume()
+    }
+    
+    func test_XCTestExpectation을_활용한_비동기_테스트() throws {
+        let expectation = XCTestExpectation()
+        
+        // Given
+        guard let url = URL(string: "https://csrng.net/csrng/csrng.php?min=0&max=50") else {
+            XCTFail()
+            return
+        }
+        
+        // When
+        let dataTask = URLSession.shared.dataTask(with: URLRequest(url: url)) { data, response, error in
+            if let data = data {
+                do {
+                    let randomNumber = try JSONDecoder().decode([RandomNumber].self, from: data)
+                    
+                    // Then
+                    XCTAssertEqual(randomNumber.first?.min, 0)
+                    
+                    expectation.fulfill()
+                } catch {
+                    XCTFail()
+                }
+            } else {
+                XCTFail()
+            }
+        }
+        
+        dataTask.resume()
+        
+        wait(for: [expectation], timeout: 3)
     }
 }
