@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		DEAFAD4D2B8CC3C5009C9C8E /* TestCodeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAFAD4C2B8CC3C5009C9C8E /* TestCodeApp.swift */; };
 		DEAFAD4F2B8CC3C5009C9C8E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAFAD4E2B8CC3C5009C9C8E /* ContentView.swift */; };
-		DEAFAD512B8CC3C5009C9C8E /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAFAD502B8CC3C5009C9C8E /* Item.swift */; };
 		DEAFAD532B8CC3C7009C9C8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEAFAD522B8CC3C7009C9C8E /* Assets.xcassets */; };
 		DEAFAD562B8CC3C7009C9C8E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEAFAD552B8CC3C7009C9C8E /* Preview Assets.xcassets */; };
 		DEAFAD632B8CC49C009C9C8E /* TestCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAFAD622B8CC49C009C9C8E /* TestCodeTests.swift */; };
@@ -29,7 +28,6 @@
 		DEAFAD492B8CC3C5009C9C8E /* TestCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEAFAD4C2B8CC3C5009C9C8E /* TestCodeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCodeApp.swift; sourceTree = "<group>"; };
 		DEAFAD4E2B8CC3C5009C9C8E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		DEAFAD502B8CC3C5009C9C8E /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		DEAFAD522B8CC3C7009C9C8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEAFAD552B8CC3C7009C9C8E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DEAFAD602B8CC49C009C9C8E /* TestCodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestCodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,7 +75,6 @@
 			children = (
 				DEAFAD4C2B8CC3C5009C9C8E /* TestCodeApp.swift */,
 				DEAFAD4E2B8CC3C5009C9C8E /* ContentView.swift */,
-				DEAFAD502B8CC3C5009C9C8E /* Item.swift */,
 				DEAFAD522B8CC3C7009C9C8E /* Assets.xcassets */,
 				DEAFAD542B8CC3C7009C9C8E /* Preview Content */,
 			);
@@ -201,7 +198,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEAFAD4F2B8CC3C5009C9C8E /* ContentView.swift in Sources */,
-				DEAFAD512B8CC3C5009C9C8E /* Item.swift in Sources */,
 				DEAFAD4D2B8CC3C5009C9C8E /* TestCodeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,6 +356,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -389,6 +386,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -410,7 +408,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FA464JRW3F;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MACOSX_DEPLOYMENT_TARGET = 13.5;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hojoon.TestCodeTests;
@@ -432,7 +430,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FA464JRW3F;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MACOSX_DEPLOYMENT_TARGET = 13.5;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hojoon.TestCodeTests;
